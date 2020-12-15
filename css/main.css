@@ -94,7 +94,7 @@ section#intro p {
 section#officers #officers-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 50px;
+  grid-row-gap: 60px;
 }
 @media only screen and (max-width: 1200px) {
   section#officers #officers-grid {
@@ -107,9 +107,9 @@ section#officers #officers-grid {
   }
 }
 section#officers img {
-  height: 270px;
+  height: 250px;
   border-radius: 5px;
-  border: 2px solid #f2f2f2;
+  border: 1px solid gray;
   filter: grayscale(0.5);
 }
 
