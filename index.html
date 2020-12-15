@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TJHSST Web Development Club</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
   </head>
   <body>
     <section class="light" id="intro">
-      <p>TJHSST</p>
-      <h1>Web<br />Development<br />Club</h1>
-      <p>Wednesday, 8B, Room 16 (Billington)</p>
+      <div>
+        <p>TJHSST</p>
+        <h1>Web<br />Development<br />Club</h1>
+        <p>Wednesday, 8B, Room 16 (Billington)</p>
+      </div>
+    </section>
+    <section class="dark" id="officers">
+      <div>
+        <h2>Officers</h2>
+        <div x-data="officers" id="officers-grid">
+          <template x-for="officer in officers" :key="officer.name">
+            <div class="officer">
+              <img x-bind:src="'images/officers/' + officer.image" />
+              <h3 x-text="officer.name" class="name"></h3>
+              <p>
+                <span x-text="officer.role" class="role"></span>,
+                <span x-text="officer.year" class="year"></span>
+              </p>
+            </div>
+          </template>
+        </div>
+      </div>
     </section>
   </body>
+  <script src="script.js"></script>
 </html>
