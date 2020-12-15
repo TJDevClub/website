@@ -43,12 +43,35 @@
             <a
               class="resource"
               x-bind:href="resource.link"
-              x-text="'→ ' + resource.name"
+              x-text="resource.name"
             >
             </a>
           </template>
         </div>
       </div>
+    </section>
+    <section class="dark" id="other">
+      <div>
+        <div id="lectures">
+          <img src="images/icons/lecture.svg" />
+          <p>Lectures</p>
+          <a href="#">Coming Soon</a>
+        </div>
+        <div id="contact">
+          <img src="images/icons/mail.svg" />
+          <p>Contact</p>
+          <a href="mailto:tjdevclub@gmail.com">tjdevclub@gmail.com</a>
+        </div>
+        <div id="github">
+          <img src="images/icons/github.svg" />
+          <p>GitHub</p>
+          <a href="https://www.github.com/tjdevclub">github.com/tjdevclub</a>
+        </div>
+      </div>
+    </section>
+    <section class="light" id="credits">
+      <p>Copyright &copy; 2020</p>
+      <p>Design by Akash Bhave (2021)</p>
     </section>
   </body>
   <script src="script.js"></script>
