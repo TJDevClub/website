@@ -16,6 +16,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  opacity: 0.5;
+  transition-duration: 0.3s;
+}
+a:hover {
+  opacity: 1;
+}
+
 section {
   padding: 60px;
   font-size: 1.7em;
@@ -24,21 +32,24 @@ section {
   section {
     width: 100%;
     padding: 30px;
-    min-height: calc(100vh - 60px);
-
     font-size: 4vw;
   }
 }
 section > div {
   width: 60%;
-  /* Fill exactly the screen's height, factoring in padding */
-  min-height: calc(100vh - 120px);
   margin: 0 auto;
   /* Flexbox for the win */
   display: flex;
   flex-direction: column;
   word-wrap: normal;
   justify-content: center;
+  /* Fill exactly the screen's height, factoring in padding */
+  min-height: calc(100vh - 120px);
+}
+@media only screen and (max-width: 768px) {
+  section > div {
+    min-height: calc(100vh - 60px);
+  }
 }
 @media only screen and (max-width: 1920px) {
   section > div {
@@ -109,4 +120,22 @@ section#officers .name {
 }
 section#officers .year {
   font-style: italic;
+}
+
+section#resources > div,
+section#other > div {
+  min-height: calc(50vh - 120px);
+}
+@media only screen and (max-width: 768px) {
+  section#resources > div,
+  section#other > div {
+    min-height: calc(50vh - 60px);
+  }
+}
+
+section#resources a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 20px;
 }

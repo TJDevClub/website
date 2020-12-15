@@ -35,6 +35,21 @@
         </div>
       </div>
     </section>
+    <section class="light" id="resources">
+      <div>
+        <h2>Resources</h2>
+        <div x-data="resources">
+          <template x-for="resource in resources" :key="resource.name">
+            <a
+              class="resource"
+              x-bind:href="resource.link"
+              x-text="'→ ' + resource.name"
+            >
+            </a>
+          </template>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="script.js"></script>
 </html>

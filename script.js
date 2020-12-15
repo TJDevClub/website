@@ -37,4 +37,17 @@ const officers = [
   },
 ];
 
-console.log(officers);
+const resources = [
+  {
+    name: "W3Schools",
+    link: "https://www.w3schools.com",
+  },
+  {
+    name: "MDN Web Docs",
+    link: "https://developer.mozilla.org",
+  },
+  {
+    name: "HTML Reference",
+    link: "https://www.htmlreference.io",
+  },
+];
