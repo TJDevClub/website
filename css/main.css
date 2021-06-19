@@ -110,8 +110,6 @@ section#officers #officers-grid {
 section#officers img {
   height: 250px;
   border-radius: 5px;
-  border: 1px solid gray;
-  filter: grayscale(0.5);
 }
 
 section#officers .name {

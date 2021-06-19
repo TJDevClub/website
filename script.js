@@ -1,39 +1,39 @@
 const officers = [
   {
-    name: "Akash Bhave",
-    role: "Co-President",
-    image: "akash.jpeg",
-    year: 2021,
-  },
-  {
-    name: "Alex Suh",
-    role: "Co-President",
-    image: "alex.jpeg",
-    year: 2021,
-  },
-  {
     name: "Anna Hsu",
-    role: "Chief Lecturer",
-    image: "anna.jpeg",
+    role: "Co-President",
+    image: "anna.jpg",
     year: 2022,
   },
   {
     name: "Bryant Park",
-    role: "Publicist",
+    role: "Co-President",
     image: "bryant.png",
     year: 2022,
   },
   {
-    name: "Gayatri Gopavajhala",
+    name: "Zakariyya Scavotto",
     role: "Lecturer",
-    image: "gayatri.png",
-    year: 2021,
+    image: "zakariyya.png",
+    year: 2022,
   },
   {
-    name: "Kari Naga",
+    name: "Daniel Chua",
     role: "Lecturer",
-    image: "kari.jpeg",
-    year: 2021,
+    image: "daniel.jpg",
+    year: 2024,
+  },
+  {
+    name: "Allen Huo",
+    role: "Lecturer",
+    image: "devclub.png",
+    year: 2023,
+  },
+  {
+    name: "Ashley Chen",
+    role: "Publicist",
+    image: "devclub.png",
+    year: 2022,
   },
 ];
 
