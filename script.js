@@ -26,13 +26,13 @@ const officers = [
   {
     name: "Allen Huo",
     role: "Lecturer",
-    image: "devclub.png",
+    image: "allen.png",
     year: 2023,
   },
   {
     name: "Ashley Chen",
     role: "Publicist",
-    image: "devclub.png",
+    image: "ashley.png",
     year: 2022,
   },
 ];
